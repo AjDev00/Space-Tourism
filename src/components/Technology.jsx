@@ -4,13 +4,12 @@ import logo from "../assets/shared/logo.svg";
 import { useContext } from "react";
 import { AppContext } from "../App";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
-import FirstCrewMember from "./FirstCrewMember";
-import SecondCrewMember from "./SecondCrewMember";
-import ThirdCrewMember from "./ThirdCrewMember";
-import FourthCrewMember from "./FourthCrewMember";
+import FirstTechnology from "./FirstTechnology";
+import SecondTechnology from "./SecondTechnology";
+import ThirdTechnology from "./ThirdTechnology";
 
-export default function Crew() {
-  const { navClicked, handleNavClicked, lists, setNavClicked, crew } =
+export default function Technology() {
+  const { navClicked, handleNavClicked, lists, setNavClicked, technology } =
     useContext(AppContext);
 
   function handleClick() {
@@ -19,7 +18,7 @@ export default function Crew() {
 
   return (
     <div>
-      <div className="bg-mobileCrewBgImage bg-cover bg-center min-h-screen bg-fixed">
+      <div className="bg-mobileTechnologyBgImage bg-cover bg-center min-h-screen bg-fixed">
         <div className="fixed w-full">
           <div className="flex flex-row justify-between px-5 py-7 items-center">
             <div>
@@ -62,10 +61,9 @@ export default function Crew() {
           </div>
         </div>
         <div>
-          {crew === 0 && <FirstCrewMember />}
-          {crew === 1 && <SecondCrewMember />}
-          {crew === 2 && <ThirdCrewMember />}
-          {crew === 3 && <FourthCrewMember />}
+          {technology === 0 && <FirstTechnology />}
+          {technology === 1 && <SecondTechnology />}
+          {technology === 2 && <ThirdTechnology />}
         </div>
       </div>
     </div>

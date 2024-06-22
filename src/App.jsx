@@ -9,6 +9,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom/cjs/react-router-dom.min";
+import Technology from "./components/Technology";
 
 export const AppContext = createContext();
 
@@ -40,6 +41,7 @@ function App() {
     {
       id: 3,
       link: "Technology",
+      to: "/technology",
     },
   ];
 
@@ -63,6 +65,40 @@ function App() {
     setDestinations(3);
   }
 
+  //crew params.
+  const [crew, setCrew] = useState(0);
+
+  function changeCrewToDouglas() {
+    setCrew(0);
+  }
+
+  function changeCrewToMark() {
+    setCrew(1);
+  }
+
+  function changeCrewToVictor() {
+    setCrew(2);
+  }
+
+  function changeCrewToAnsari() {
+    setCrew(3);
+  }
+
+  //technology params.
+  const [technology, setTechnology] = useState(0);
+
+  function changeTechToVehicle() {
+    setTechnology(0);
+  }
+
+  function changeTechToSpace() {
+    setTechnology(1);
+  }
+
+  function changeTechToCapsule() {
+    setTechnology(2);
+  }
+
   return (
     <div className="App">
       <AppContext.Provider
@@ -76,6 +112,15 @@ function App() {
           changeDestinationToMoon,
           changeDestinationToEuropa,
           changeDestinationToTitan,
+          crew,
+          changeCrewToDouglas,
+          changeCrewToMark,
+          changeCrewToVictor,
+          changeCrewToAnsari,
+          technology,
+          changeTechToVehicle,
+          changeTechToSpace,
+          changeTechToCapsule,
         }}
       >
         <Router>
@@ -89,6 +134,9 @@ function App() {
             </Route>
             <Route path="/crew">
               <Crew />
+            </Route>
+            <Route path="/technology">
+              <Technology />
             </Route>
           </Switch>
         </Router>
