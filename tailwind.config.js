@@ -10,6 +10,9 @@ export default {
         mobileCrewBgImage: "url('/src/assets/crew/background-crew-mobile.jpg')",
         mobileTechnologyBgImage:
           "url('/src/assets/technology/background-technology-mobile.jpg')",
+        desktopBgImage: "url('/src/assets/home/background-home-desktop.jpg')",
+        desktopDestinationBgImage:
+          "url('/src/assets/destination/background-destination-desktop.jpg')",
       },
       fontFamily: {
         barlow: ["Barlow"],
