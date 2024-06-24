@@ -8,6 +8,7 @@ import FirstCrewMember from "./FirstCrewMember";
 import SecondCrewMember from "./SecondCrewMember";
 import ThirdCrewMember from "./ThirdCrewMember";
 import FourthCrewMember from "./FourthCrewMember";
+import NavBar from "./NavBar";
 
 export default function Crew() {
   const { navClicked, handleNavClicked, lists, setNavClicked, crew } =
@@ -59,27 +60,7 @@ export default function Crew() {
               </span>
             </div>
           </div>
-          <div>
-            {navClicked ? (
-              <div
-                style={{ fontSize: "20px" }}
-                className="absolute text-white font-barlow right-0 top-0 w-72 h-screen bg-slate-900 bg-opacity-40 backdrop-blur-lg border-transparent border-gray-700 frosted-glass"
-              >
-                {lists.map((list) => (
-                  <ul key={list.id} className="px-10">
-                    <li className="flex flex-row gap-5 mb-[-380px] py-52">
-                      <p>0{list.id}</p>
-                      <div onClick={handleClick}>
-                        <Link to={list.to}>{list.link}</Link>
-                      </div>
-                    </li>
-                  </ul>
-                ))}
-              </div>
-            ) : (
-              ""
-            )}
-          </div>
+          <div>{navClicked ? <NavBar /> : ""}</div>
         </div>
         <div>
           {crew === 0 && <FirstCrewMember />}

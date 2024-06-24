@@ -15,6 +15,8 @@ export default {
           "url('/src/assets/destination/background-destination-desktop.jpg')",
         desktopCrewBgImage:
           "url('/src/assets/crew/background-crew-desktop.jpg')",
+        desktopTechnologyBgImage:
+          "url('/src/assets/technology/background-technology-desktop.jpg')",
       },
       fontFamily: {
         barlow: ["Barlow"],
