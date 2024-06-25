@@ -56,7 +56,7 @@ export default function Mars() {
                 </h3>
                 <p
                   style={{ fontSize: "15px" }}
-                  className="font-barlow md:text-wrap tracking-normal mt-7 md:mt-5 md:opacity-70 px-5 md:px-0"
+                  className="font-barlow md:text-wrap tracking-normal mt-7 md:mt-5 md:opacity-70 px-9 md:px-0"
                 >
                   Don’t forget to pack your hiking boots. You’ll need them to
                   tackle{" "}

@@ -39,7 +39,6 @@ export default function Destination() {
                 />
               )}
             </div>
-
             {/* //larger screen nav. */}
             <div className="hidden md:text-white md:flex gap-4 md:bg-slate-500 md:bg-opacity-15 md:backdrop-blur-lg md:border-transparent md:border-gray-700 md:frosted-glass md:p-7 md:px-36 md:-mr-36">
               {lists.map((list) => (

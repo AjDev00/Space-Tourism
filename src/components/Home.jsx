@@ -65,9 +65,9 @@ export default function Home() {
                 Let's face it; if you want to go to space, you might as well
                 <div className="hidden md:flex md:-mb-3">
                   <br />
-                </div>
+                </div>{" "}
                 genuinely go to outer space and not hover kind of on the edge of
-                it. Well sit back, and relax
+                it. Well sit back, and relax{" "}
                 <div className="hidden md:flex md:-mb-3">
                   <br />
                 </div>
